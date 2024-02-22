@@ -10,7 +10,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <NextUIProvider>
         <React.Suspense fallback="loading">
             {/* <div className=" bg-neutral-800  min-w-screen min-h-screen p-1 flex items-start justify-center"> */}
-            <div className=" min-w-screen min-h-screen p-1 items-start justify-center">
+            <div className=" min-w-screen min-h-screen p-0 items-start justify-center">
                 <App/>
             </div>
         </React.Suspense>
