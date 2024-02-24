@@ -1,5 +1,5 @@
 const { nextui } = require("@nextui-org/react");
-const defaultTheme = require('tailwindcss/defaultTheme')
+const defaultTheme = require("tailwindcss/defaultTheme");
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -8,12 +8,11 @@ module.exports = {
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-
     extend: {
       fontFamily: {
-          'sans': ['"Poppins"', ...defaultTheme.fontFamily.sans],
+        sans: ['"Poppins"', ...defaultTheme.fontFamily.sans],
       },
-    }
+    },
   },
   darkMode: "class",
   plugins: [nextui()],
