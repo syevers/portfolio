@@ -14,7 +14,6 @@ import {
   ModalContent,
   ModalFooter,
   ModalBody,
-  useDisclosure,
   Modal,
   Tooltip,
   Textarea,
@@ -81,47 +80,52 @@ export default function App() {
       <main>
         <section
           id="About"
-          className="container grid grid-rows-5 grid-cols-4 items-center min-h-[115vh] min-w-full "
+          className="container grid grid-rows-5 grid-cols-4 items-center min-h-screen min-w-full "
         >
-          <div className="grid-cols-subgrid row-start-1 col-start-1 col-span-3 row-span-2 absolute  top-1/4 left-1/4">
+          <div className="grid-cols-subgrid row-start-2 col-start-2 col-span-1 row-span-1 justify-items-center m-auto ">
             <Image
-              width={300}
-              height={300}
+              width={200}
+              height={200}
               radius={"full"}
               loading="lazy"
-              src="https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM="
+              src="./src/assets/icons/hero.png"
             />
           </div>
-          <p className=" font-bold text-5xl text-[#f6f2d8] grid grid-cols-subgrid row-start-1 col-start-2  col-span-1 row-span-1  absolute top-1/4 left-[60vw]">
-            Hi!👋 My name is Donovan.
+          <p className=" font-bold text-5xl text-[#f6f2d8] grid grid-cols-subgrid row-start-2 col-start-3  col-span-1 row-span-1   ">
+            Hi!👋 <br />
+            My name <br />
+            is Donovan.
             <Button
               as={Link}
               href="https://www.google.com"
               download="DonovanBosson-Resume.pdf"
               target="_blank"
               radius="full"
-              className="absolute top-3/4 my-12 ml-9 mr-unit-5xl  bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg"
+              className="relative top-3/4 ml-4 mr-unit-7xl  w-[10rem] bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg"
             >
               Download Resume
             </Button>
           </p>
 
-          <div className="grid grid-cols-subgrid row-start-2 col-start-2 row-span-3 items-center ">
-            <h1 className="font-bold text-5xl text-[#f6f2d8] align-text-top items-center">
+          <div className="grid grid-cols-subgrid row-start-2 col-start-2 row-span-3 ">
+            <h1 className="font-bold text-5xl text-[#f6f2d8] text-center items-center mt-10">
               About Me
             </h1>
-            <p className="text-amber-50/60">kasdkasjdkasdkasjdkasjdksaj</p>
-            <div className="w-full  max-h-full block absolute radius"></div>
+            <p className="text-amber-50/60 text-large py-4 text-center  ">
+              I'm currently enrolled at Cal State University Fullerton earning
+              my bachelor's degree in Computer Science. I am passionate about
+              programming and excited to help advance the future of technology!
+            </p>
+            {/* <div className="w-full  max-h-full block absolute radius"></div> */}
           </div>
 
-          <div className=" grid grid-cols-subgrid row-start-2  row-span-3 col-start-3 justify-center">
+          <div className=" grid grid-cols-subgrid row-start-2  row-span-3 items-center col-start-3 ">
             <div>
-              <h1 className="font-bold text-5xl text-[#f6f2d8]  ">
+              <h1 className="font-bold text-5xl text-[#f6f2d8] mt-14 ">
                 Languages & Frameworks
               </h1>
-              <p>kasdkasjdkasdkasjdkasjdksaj</p>
             </div>
-            <div className="flex flex-1 ">
+            <div className="flex flex-1 mt-6 jusify-center">
               <Image
                 width={50}
                 height={50}
@@ -150,7 +154,7 @@ export default function App() {
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
               />
             </div>
-            <div className="flex">
+            <div className="flex flex-1 ">
               <Image
                 width={50}
                 height={50}
@@ -246,22 +250,7 @@ export default function App() {
                           src="./src/assets/projects/bank.png"
                           className="float-left"
                         />
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Nullam pulvinar risus non risus hendrerit
-                          venenatis. Pellentesque sit amet hendrerit risus, sed
-                          porttitor quam. Lorem ipsum dolor sit amet,
-                          consectetur adipiscing elit. Nullam pulvinar risus non
-                          risus hendrerit venenatis. Pellentesque sit amet
-                          hendrerit risus, sed porttitor quam. Magna
-                          exercitation reprehenderit magna aute tempor cupidatat
-                          consequat elit dolor adipisicing. Mollit dolor eiusmod
-                          sunt ex incididunt cillum quis. Velit duis sit officia
-                          eiusmod Lorem aliqua enim laboris do dolor eiusmod. Et
-                          mollit incididunt nisi consectetur esse laborum
-                          eiusmod pariatur proident Lorem eiusmod et. Culpa
-                          deserunt nostrud ad veniam.
-                        </p>
+                        <p>TODO</p>
                       </ModalBody>
                       <ModalFooter>
                         <Button
@@ -332,8 +321,8 @@ export default function App() {
                           className="float-left"
                         />
                         <p>
-                          USES OPENSTREETMAP TO GET GEOLOCATION SAVES LOCALLY IN
-                          CACHE
+                          TODO: USES OPENSTREETMAP TO GET GEOLOCATION. IT SAVES
+                          DATA LOCALLY IN CACHE
                         </p>
                       </ModalBody>
                       <ModalFooter>
@@ -406,10 +395,7 @@ export default function App() {
                           src="./src/assets/projects/maps.png"
                           className="float-left"
                         />
-                        <p>
-                          USES OPENSTREETMAP TO GET GEOLOCATION SAVES LOCALLY IN
-                          CACHE
-                        </p>
+                        <p>TODO</p>
                       </ModalBody>
                       <ModalFooter>
                         <Button
