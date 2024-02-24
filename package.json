@@ -6,12 +6,17 @@
   },
   "dependencies": {
     "@nextui-org/react": "latest",
+    "@radix-ui/react-slot": "^1.0.2",
+    "embla-carousel-react": "^8.0.0",
     "framer-motion": "10.12.16",
+    "lib-utils-ts": "0.0.0-test",
+    "lucide-react": "^0.338.0",
     "prettier": "^3.2.5",
     "react": "latest",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@types/node": "^20.11.20",
     "@vitejs/plugin-react": "3.1.0",
     "autoprefixer": "^10.4.14",
     "esbuild-wasm": "0.17.12",
