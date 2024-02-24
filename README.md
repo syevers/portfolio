@@ -27,8 +27,8 @@ Email - donovanbosson@csu.fullerton.edu
 <ol>
 <li> clone/download the folder </li>
 <li>Open terminal and Navigate to the directory where you downloaded the folder</li>
-<li>Type <img src="https://img.shields.io/badge/npm-npm_install-white?style=for-the-badge&logo=npm"/> to install the dependencies </li>
-<li> Type <img src="https://img.shields.io/badge/npm-npm_run-white?style=for-the-badge&logo=npm"/> to start the server locally </li>
+<li>Type <img src="https://img.shields.io/badge/npm_install-white?style=for-the-badge&logo=npm"/> to install the dependencies </li>
+<li> Type <img src="https://img.shields.io/badge/npm_run-white?style=for-the-badge&logo=npm"/> to start the server locally </li>
 <li> Type <img src="https://img.shields.io/badge/o_%2B_enter-white?style=for-the-badge"/> to launch open the localhost in your default browser </li>
    <em>Alternatively</em>, copy and pase the localhost url provided from the terminal into a browser.
    </ol>
